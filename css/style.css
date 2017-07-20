@@ -1,0 +1,477 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: all 0.1s ease-in;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("//db.onlinewebfonts.com/t/7438bbf176f4cce037dbe179c0e5aece.eot");
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+}
+
+body{
+
+	overflow: hidden;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673e97+0,ab70af+100 */
+	background:#673e97; /* Old browsers */
+	background:-moz-linear-gradient(left,  #673e97 0%, #ab70af 100%); /* FF3.6-15 */
+	background:-webkit-linear-gradient(left,  #673e97 0%,#ab70af 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #673e97 0%,#ab70af 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673e97', endColorstr='#ab70af',GradientType=1 ); /* IE6-9 */
+
+}
+/*------------------------------------galaxy animation-----------------*/
+.back{
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	left: -80%;
+	top: -90%;
+}
+.grain {
+	background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	min-width: 300%;
+	min-height: 300%;
+	opacity: 0.2;
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 120s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: rotation;
+	-moz-animation-duration: 120s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-o-animation-name: rotation;
+	-o-animation-duration: 120s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+	animation-name: rotation;
+	animation-duration: 120s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+	0% {-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+	0% {-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+	0% {-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);}
+}
+@keyframes rotation {
+	0% {-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(720deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);}
+}
+/*------------------------------------galaxy animation-----------------*/
+header{
+	width: 770px;
+	height: 42px;
+	margin: 30px auto;
+}
+.menu>li{
+	display: inline-block;
+	margin-left: 40px;
+	list-style-type:none;
+	width: 10%;
+}
+.menu>li:first-child{
+	margin-left: 0;
+}
+.menu>li:nth-child(2){
+	margin-left: 60px;
+}
+.menu>li:nth-child(5){
+	margin-right: 65px;
+}
+.menu__link{
+	text-decoration: none;
+	/* Style for "LIFESTYLE" */
+	width: 405px;
+	height: 9px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/*----------------------animation menu-------------------*/
+@-webkit-keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+@keyframes hvr-pulse {
+	25% {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	75% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+.menu__link {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+.menu__link:hover, .menu__link:focus, .menu__link:active {
+	-webkit-animation-name: hvr-pulse;
+	animation-name: hvr-pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+/*----------------------animation menu end-------------------*/
+.background{
+	background-color: white;
+	opacity: 0.4;
+	position: absolute;
+
+}
+.section-bg{
+	position: relative;
+	margin: 0 auto ;
+	text-align: center;
+	width: 840px;
+	height: 460px;
+}
+.section__bg-1{
+	/* Style for "card_2" */
+	width: 776px;
+	height: 408px;
+	margin-top: 10px;
+	margin-left: 14px;
+}
+.section__bg-2 {
+	/* Style for "card_3" */
+	width: 800px;
+	height: 408px;
+	margin-top: 20px;
+}
+.section-card{
+	width: 750px;
+	height: 428px;
+	margin-left: 28px;
+	margin-right: 28px;
+	background-color:  #f4f4f4;
+	opacity: 0.99;
+	background-image: linear-gradient(rgba(236,232,235,1) 50px, rgba(243,243,243,0.7) 20%);
+}
+.item{
+	float: left;
+}
+.section-card__left{
+	width: 502px;
+	height: 428px;
+	text-align: right;
+	position: relative;
+}
+.bg-title{
+	margin-top: 63px;
+}
+.cross{
+	position: absolute;
+	left: 0;
+	margin-top: 95px;
+	margin-left: 44px;
+	z-index:2;
+}
+.bg-text{
+	top:-130px;
+	position: relative;
+	z-index:1;
+}
+.cross:hover{
+	transform: scale(1.1);
+}
+.section-card__slider{
+	position: absolute;
+}
+.slider-item{
+	position: absolute;
+	left: 175px;
+	bottom: 23px;
+}
+.slider-item__img:nth-child(n+2){
+	margin-left: 18px;
+}
+.slider-item__img:hover{
+	transform: scale(1.1);
+}
+.section-card__right{
+	width: 248px;
+	height: 428px;
+	background-color: white;
+}
+.section-card__right{
+	/* Style for "Прямоуголь" */
+	width: 248px;
+	height: 428px;
+	background-color: #ffffff;
+	float:left;
+	padding-left: 31px;
+}
+.section-card__right>.label{
+	/* Style for "NEW" */
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	/* Style for "Прямоуголь" */
+	width: 42px;
+	height: 24px;
+	background-color: #ffa60d;
+
+	margin-top:43px;
+	padding-top: 3px;
+}
+.section-card__right>h1{
+	/* Style for "THE RUNNIN" */
+	text-align: left;
+	font-family: Roboto;
+	font-size: 24px;
+	text-transform: uppercase;
+
+	margin-top: 10px;
+	/* Text style for "THE , HAS" */
+	color: #000000;
+	/* Text style for "RUNNING" */
+}
+.section-card__right>h1>span{
+	color: #5e4fff;
+}
+.section-card__right>h4{
+	/* Style for "Huarache" */
+	width: 46px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 12px;
+	float: left;
+}
+.price{
+	/* Style for "$ 200" */
+	width: 64px;
+	height: 20px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 22px;
+	font-weight: 300;
+	background: none;
+	margin-top: 50px;
+	clear: both;
+}
+.section-card__right>h5{
+	/* Style for "Size" */
+	width: 23px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 15px;
+}
+/*----------------------------stars---------------------*/
+.rating{
+	width: 130px;
+	height: 15px;
+	position: relative;
+	float: right;
+}
+.rating label {
+	position: relative;
+	display: inline;
+	float: left;
+	z-index:1;
+	width:5px;
+	height:16px;
+}
+.rating input[type=radio] {
+	z-index: 2;
+	display:inline;
+	float: left;
+	width:16px;
+	height:16px;
+}
+.star {
+	background:url("../img/stars5.png") 0 -16px;
+	height:16px;
+	width:16px;
+	z-index:1;
+	position: absolute;
+	top: 0;
+	display:block;
+	cursor:pointer;
+	left: -16px;
+}
+.rating:hover .star {
+	background-position: 0 -32px;
+}
+input:checked ~ label .star {
+	background-position: 0 0;
+}
+input:checked + label .star {
+	background-position: 0 -16px;
+}
+label:hover ~ label .star {
+	background-position: 0 0 !important;
+}
+
+/*----------------size----------------*/
+.size>ul{
+	list-style: none;
+
+}
+.size>ul>li{
+	/*display: inline-block;*/
+	float:left;
+}
+.size>ul>li>input{
+	/* Style for "Прямоуголь" */
+	width: 24px;
+	height: 24px;
+	background-color: #ffffff;
+	margin-right: 15px;
+	border: none;
+	/* Style for "7 8" */
+	color: #000000;
+	font-family: Roboto;
+	font-size: 15px;
+
+}
+
+.size>ul>li>input:hover{
+	border: 1px solid #0f0f0f;
+}
+.section-card__right>button{
+	/* Style for "Прямоуголь" */
+	width: 118px;
+	height: 30px;
+	background-color: #a200b8;
+	border: none;
+	Float:left;
+	margin-top: 35px;
+	/* Style for "ADD TO CAR" */
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.section-card__right>button:hover {
+	background-color: #2f5fb8;
+}
+.section-card__right>button:last-child{
+	/* Style for "Прямоуголь" */
+	width: 118px;
+	height: 30px;
+	border: 1px solid #0f0f0f;
+	background-color: #ffffff;
+	/* Style for "WISHLIST" */
+	color: #000000;
+	font-family: Roboto;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 3px;
+}
+.section-card__right>button:last-child:hover{
+	background-color: #2f5fb8;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
